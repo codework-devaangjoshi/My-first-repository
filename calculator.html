@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CALCULATOR</title>
+	<style type="text/css">
+		#body{
+			width: 400px;
+			height: 400px;
+			background-color: black;
+			margin-left: 400px;
+			
+			border: 5px solid white;
+			border-radius: 20px;
+		}
+		#display{
+			background-color: limegreen;
+			width: 360px;height: 80px;
+			position: absolute;
+font-size: 40px;
+margin-top: -380px;
+margin-left: 420px;
+border-radius: 3px;
+border: 3px solid white;
+text-align: right;
+		}
+		#num1{
+			width: 50px;
+			height: 30px;
+			
+			background-color: cyan;
+
+		font-size: 30px;
+		font-family: sans-serif;
+		padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-top: -135px;
+
+		margin-left: 420px;
+		transition: 3s;
+		border-radius: 30px;
+
+				}
+				#num2{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+		padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-top: -135px;
+		margin-left: 500px;transition: 3s;border-radius: 30px;
+				}
+				#num3{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+		padding-top: 7px;
+		padding-bottom: 35px;
+		
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-top: -70px;
+		margin-left: 500px;transition: 3s;
+		border-radius: 30px;
+				}
+				#num4{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+		padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-left: 420px;
+		margin-top: -200px;transition: 3s;
+		border-radius: 30px;
+				}
+				#num5{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+			padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-top: -200px;
+		margin-left: 500px;transition: 3s;
+		border-radius: 30px;
+				}
+				#num6{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+		padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-top: -200px;
+		margin-left: 580px;transition: 3s;
+		border-radius: 30px;
+				}
+				#num7{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+			padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-top: -270px;
+		margin-left: 420px;transition: 3s;
+		border-radius: 30px;
+				}
+				#num8{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+			padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-top: -270px;
+		margin-left: 500px;transition: 3s;
+		border-radius: 30px;
+				}
+				#num9{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+			padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-top: -270px;
+		margin-left: 580px;transition: 3s;
+		border-radius: 30px;
+				}
+				#num10{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+			padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid deeppink;
+		position: absolute;
+		margin-top: -70px;
+		margin-left: 420px;transition: 3s;
+		border-radius: 30px;
+				}
+				#cal1{
+						width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+		padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid red;
+		position: absolute;
+		margin-top: -135px;
+		margin-left: 580px;transition: 3s;
+		border-radius: 30px;
+
+				}
+#cal2{
+	width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+		padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid red;
+		position: absolute;
+		margin-top: -70px;
+		margin-left: 580px;transition: 3s;
+border-radius: 30px;
+}
+#cal3{
+	width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+			padding-top: 10px;
+		padding-bottom: 35px;
+		border: 3px solid red;
+		position: absolute;
+		margin-top: -270px;
+		margin-left: 660px;transition: 3s;
+		border-radius: 30px;
+}
+#cal4{
+	width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 40px;
+		font-family: sans-serif;
+		padding-top: 7px;
+		
+		padding-bottom: 105px;
+		border: 3px solid red;
+		position: absolute;
+		margin-top: -200px;
+		margin-left: 660px;transition: 3s;
+		border-radius: 30px;
+}
+#cal5{
+	width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+			padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid red;
+		position: absolute;
+		margin-top: -70px;
+		margin-left: 660px;transition: 3s;
+		border-radius: 30px;
+}
+#cal6{
+	width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+			padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid red;
+		position: absolute;
+		margin-top: -270px;
+		margin-left: 740px;transition: 3s;
+		border-radius: 30px;
+}
+	#cal7{
+			width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 30px;
+		font-family: sans-serif;
+			padding-top: 7px;
+		padding-bottom: 35px;
+		border: 3px solid red;
+		position: absolute;
+		margin-top: -200px;
+		margin-left: 740px;transition: 3s;
+		border-radius: 30px;
+				}
+#cut{
+	width: 50px;
+			height: 10px;
+			background-color: cyan;
+			text-align: center;
+		font-size: 20px;
+		font-family: sans-serif;
+	padding-top: 10px;
+		padding-bottom: 105px;
+		border: 3px solid yellow;
+		position: absolute;
+		margin-top: -135px;
+		margin-left: 740px;transition: 3s;
+		border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+#num1:hover{
+			background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#num2:hover{
+			background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#num3:hover{
+		background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#num4:hover{
+			
+		background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#num5:hover{
+		background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#num6:hover{
+			background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#num7:hover{
+		background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#num8:hover{
+			background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#num9:hover{
+		background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#num10:hover{
+			background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+				#cal1:hover{
+						background-color: deeppink;
+			color: white;
+			transition: 3s;
+
+				}
+#cal2:hover{
+	background-color: deeppink;
+			color: white;
+			transition: 3s;
+
+}
+#cal3:hover{
+	background-color: deeppink;
+			color: white;
+			transition: 3s;
+}
+#cal4:hover{
+	background-color: deeppink;
+			color: white;
+			transition: 3s;
+}
+#cal5:hover{
+	background-color: deeppink;
+			color: white;
+			transition: 3s;
+}
+#cal6:hover{
+	background-color: deeppink;
+			color: white;
+			transition: 3s;
+}
+	#cal7:hover{
+			background-color: deeppink;
+			color: white;
+			transition: 3s;
+				}
+#cut:hover{
+	background-color: deeppink;
+			color: white;
+			transition: 3s;
+}
+#section{
+	border-radius: 50px;
+}
+#text{
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+
+
+	</style>
+</head>
+<body>
+	<form name="calc_form">
+<div id="body"></div>
+<input type="text" name="calc_answer" id="display" >
+
+<div id="section">
+
+	<input type="button" name="" id="num1"  onclick="calc_form.calc_answer.value += '1'"  value="1">
+<input type="button" name="" id="num2"  onclick="calc_form.calc_answer.value += '2'"  value="2">
+
+
+<input type="button" name="" id="num3"  onclick="calc_form.calc_answer.value += '3'"  value="3">
+
+
+<input type="button" name="" id="num4"  onclick="calc_form.calc_answer.value += '4'"  value="4">
+
+
+<input type="button" name="" id="num5"  onclick="calc_form.calc_answer.value += '5'"  value="5">
+
+<input type="button" name="" id="num6"  onclick="calc_form.calc_answer.value += '6'"  value="6">
+
+
+<input type="button" name="" id="num7"  onclick="calc_form.calc_answer.value += '7'"  value="7">
+
+
+<input type="button" name="" id="num8"  onclick="calc_form.calc_answer.value += '8'"  value="8">
+
+
+<input type="button" name="" id="num9"  onclick="calc_form.calc_answer.value += '9'"  value="9">
+
+
+<input type="button" name="" id="num10"  onclick="calc_form.calc_answer.value += '0'"  value="0">
+
+<input type="button" name="" id="cal1" onclick="calc_form.calc_answer.value += '.'"  value=".">
+<input type="button" name="" id="cal2" onclick="calc_form.calc_answer.value += '/'"  value="/">
+<input type="button" name="" id="cal3" onclick="calc_form.calc_answer.value += '*'"  value="x">
+<input type="button" name="" id="cal4" onclick="calc_form.calc_answer.value += '+'"  value="+">
+<input type="button" name="" id="cal5" onclick="calc_form.calc_answer.value += '%'"  value="%">
+<input type="button" name="" id="cal6" onclick="calc_form.calc_answer.value += '-'"  value="-">
+<input type="button" name="" id="cal7" onclick="calc_form.calc_answer.value = eval(calc_form.calc_answer.value)"  value="=">
+<input type="button" name="" id="cut" onclick="calc_form.calc_answer.value = ''" value="CE">
+</div>
+</form>
+
+</body>
+</html>
